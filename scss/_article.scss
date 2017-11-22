@@ -1,0 +1,31 @@
+article {
+  h1 {
+  }
+  p {
+    font-size: 14px;
+    @media only screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  p.subtitle {
+    margin: 15px 0 30px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.15rem;
+      line-height: 1.65rem;
+    }
+    @include sans-serif-font;
+  }
+  small.post-meta {
+    text-transform: uppercase;
+    color: $gray-500;
+    font-size: 9px;
+    @media only screen and (min-width: 768px) {
+      font-size: 11px;
+    }
+    a {
+      color: $gray-500;
+    }
+  }
+}

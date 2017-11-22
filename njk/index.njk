@@ -1,0 +1,37 @@
+{% extends "parts/_layout.njk" %}
+{% block main %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1600/900/?image=931" alt=""/>
+            <div class="swiper-caption">
+              <h4><a href="post.html">Suspendisse Eget Mollis Erat Morbi Fermentum Bibendum Purus</a></h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1600/900/?image=943" alt=""/>
+            <div class="swiper-caption">
+              <h4><a href="post.html">Ac Malesuada Justo Facilisis Vitae Quisque Molestie</a></h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1600/900/?image=911" alt=""/>
+            <div class="swiper-caption">
+              <h4><a href="post.html">Ligula Ac Dapibus Auctor Velit Nisl Rutrum Ipsum</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  {% include "parts/_posts.njk" %}
+</div>
+{% endblock %}

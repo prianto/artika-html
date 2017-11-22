@@ -1,0 +1,30 @@
+{% extends "parts/_layout.njk" %}
+{% block main %}
+<div class="container">
+  <h1 class="mb-4">Category: <small>Nature &amp; Culture</small></h1>
+  {% include "parts/_posts.njk" %}
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="category.html" aria-label="Prev">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Prev</span>
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="category.html">1</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="category.html">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="category.html">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="category.html" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</div>
+{% endblock %}

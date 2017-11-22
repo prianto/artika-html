@@ -1,0 +1,29 @@
+// Styling for the footer
+footer {
+  background: $gray-700;
+  padding: 30px 0 15px;
+  .list-inline {
+    margin: 0 0 0 0;
+    padding: 0;
+    .list-inline-item {
+      margin: 0 -5px 0 0;
+      padding: 0;
+    }
+  }
+  .copyright {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    text-align: center;
+    color: $gray-500 !important;
+    a {
+      color: $gray-500;
+      &:hover {
+        color: $gray-400;
+      }
+    }
+    span.divider {
+      color: #666;
+      margin: 0 5px;
+    }
+  }
+}

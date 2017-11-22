@@ -1,0 +1,96 @@
+// Bootstrap overrides for this template
+h1 {
+  font-size: 1.5rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+.btn {
+  font-size: 14px;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  @include sans-serif-font;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 7.5) !important;
+    border-color: darken($primary, 7.5) !important;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+.card {
+  border-radius: 0;
+  h4.card-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.15rem;
+      line-height: 1.65rem;
+    }
+  }
+  img {
+    border-radius: 0;
+  }
+  p.card-text {
+    margin-top: 15px;
+    font-size: 14px;
+    @media only screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  small.post-meta {
+    text-transform: uppercase;
+    color: $gray-600;
+    font-size: 9px;
+    @media only screen and (min-width: 768px) {
+      font-size: 11px;
+    }
+    a {
+      color: $gray-600;
+    }
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+  li.page-item {
+    a.page-link {
+      color: $gray-700;
+      background: $gray-100;
+      &:hover {
+        background: $white;
+      }
+    }
+    &.active {
+      a {
+        background: $gray-200;
+        border-color: $gray-300;
+        color: $gray-400;
+        &:hover {
+          background: $gray-300;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+node_modules
+
+.DS_Store
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+Thumbs.db
+[Dd]esktop.ini
+*.lnk

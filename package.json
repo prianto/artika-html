@@ -1,0 +1,46 @@
+{
+  "title": "Artika HTML",
+  "name": "artika-html",
+  "version": "4.0.0-beta.2",
+  "description": "Clean and responsive HTML theme for Bootstrap 4.",
+  "keywords": [
+    "clean",
+    "responsive",
+    "theme",
+    "template",
+    "html",
+    "sass",
+    "nunjucks",
+    "bootstrap"
+  ],
+  "homepage": "https://prianto.github.io/artika-html/",
+  "bugs": {
+    "url": "https://github.com/prianto/artika-html/issues",
+    "email": "andi@prianto.net"
+  },
+  "license": "MIT",
+  "author": "Andi Prianto",
+  "contributors": [
+    "Andi Prianto (http://www.prianto.net/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prianto/artika-html.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.9.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-header": "1.8.9",
+    "gulp-nunjucks": "3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0"
+  }
+}

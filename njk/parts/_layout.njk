@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="This theme features home page, category page, about page, contact page, search page, and post page.">
+    <meta name="author" content="@prianto">
+    <meta property="og:title" content="Artika HTML - Clean and Responsive Theme for Bootstrap 4">
+    <meta property="og:description" content="This theme features home page, category page, about page, contact page, search page, and post page.">
+    <meta property="og:image" content="img/preview.jpg">
+    <meta property="og:url" content="https://prianto.github.io/artika-html/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Prianto">
+    <meta name="twitter:image:alt" content="Artika HTML">
+    <meta name="twitter:site" content="@prianto">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400italic,400" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Artika HTML - Clean and Responsive Theme for Bootstrap 4</title>
+    <script>var qazy_image = "img/dummy.png";</script>
+    <script src="js/qazy.min.js"></script>
+  </head>
+  <body>
+    {% include "./_menu.njk" %}
+    <main id="panel">
+      <div id="panel-content">
+        {% include "./_navbar.njk" %}
+        {% block main %}
+        {% endblock %}
+        {% include "./_footer.njk" %}
+      </div>
+    </main>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/clean-blog.min.js"></script>
+  </body>
+</html>
