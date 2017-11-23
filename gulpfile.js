@@ -81,6 +81,12 @@ gulp.task('copy', function() {
       '!node_modules/font-awesome/*.json'
     ])
     .pipe(gulp.dest('vendor/font-awesome'))
+
+  gulp.src([
+      'node_modules/slideout/dist/**/*',
+      '!**/npm.js'
+    ])
+    .pipe(gulp.dest('vendor/slideout'))
 })
 
 // Default task
