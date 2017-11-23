@@ -87,6 +87,12 @@ gulp.task('copy', function() {
       '!**/npm.js'
     ])
     .pipe(gulp.dest('vendor/slideout'))
+
+  gulp.src([
+      'node_modules/swiper/dist/**/*',
+      '!**/npm.js'
+    ])
+    .pipe(gulp.dest('vendor/swiper'))
 })
 
 // Default task
