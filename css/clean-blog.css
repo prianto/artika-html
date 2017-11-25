@@ -221,20 +221,18 @@ article small.post-meta {
   display: block; }
 
 /* Custom */
-#menu {
-  visibility: hidden; }
-  #menu .navbar-nav > li.nav-item {
-    border-bottom: 1px solid #495057; }
-    #menu .navbar-nav > li.nav-item:last-child {
-      border-bottom: 0; }
-    #menu .navbar-nav > li.nav-item > a {
-      padding: 20px 20px;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase; }
-      #menu .navbar-nav > li.nav-item > a:hover {
-        color: #ced4da; }
+#menu .navbar-nav > li.nav-item {
+  border-bottom: 1px solid #495057; }
+  #menu .navbar-nav > li.nav-item:last-child {
+    border-bottom: 0; }
+  #menu .navbar-nav > li.nav-item > a {
+    padding: 20px 20px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+    #menu .navbar-nav > li.nav-item > a:hover {
+      color: #ced4da; }
 
 #panel #panel-content {
   background: #f8f9fa; }

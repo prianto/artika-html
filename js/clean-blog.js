@@ -1,40 +1,12 @@
-(function($) {
-  "use strict";
+/*
+Duplicate menu list from sidebar to navbar
+*/
+var side_menu_list = document.querySelector('#menu ul.navbar-nav').innerHTML;
+document.querySelector('#panel ul.navbar-nav').innerHTML = side_menu_list;
 
-  $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-    $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-  }).on("focus", ".floating-label-form-group", function() {
-    $(this).addClass("floating-label-form-group-with-focus");
-  }).on("blur", ".floating-label-form-group", function() {
-    $(this).removeClass("floating-label-form-group-with-focus");
-  });
-
-  var menu_list = $( "#menu ul.navbar-nav" ).html();
-  $( "#panel .navbar-collapse ul.navbar-nav" ).html(menu_list);
-
-  var mySwiper = new Swiper ('.swiper-container', {
-    lazy: true,
-    loop: true,
-    spaceBetween: 30,
-    effect: 'fade',
-    autoHeight: true,
-    calculateHeight:true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    onSlideChangeStart: function(swiper){
-      setSwiperHeight();
-    }
-  });
-
-  $('#menu').css({visibility: 'visible'});
-})(jQuery);
-
+/*
+Slideout (a.k.a sidebar menu)
+*/
 var slideout = new Slideout({
   'panel': document.getElementById('panel'),
   'menu': document.getElementById('menu'),
@@ -42,6 +14,32 @@ var slideout = new Slideout({
   'tolerance': 70
 });
 
+/*
+Slideout toggle button (a.k.a hamburger button)
+*/
 document.querySelector('.toggle-button').addEventListener('click', function() {
   slideout.toggle();
+});
+
+/*
+Swiper (a.k.a welcome banner)
+*/
+var mySwiper = new Swiper('.swiper-container', {
+  lazy: true,
+  loop: true,
+  spaceBetween: 30,
+  effect: 'fade',
+  autoHeight: true,
+  calculateHeight:true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  onSlideChangeStart: function(swiper){
+    setSwiperHeight();
+  }
 });

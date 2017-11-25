@@ -45,8 +45,7 @@ view the `gulpfile.js` to see which tasks are included with the dev environment.
 ## About
 
 Artika HTML is an open source library and passed the W3C validation.
-It uses toolkits/libraries/preprocessors:
-Jquery, Jquery Plugins, Gulp, Gulp Plugins, Sass, and Nunjucks.
+It uses toolkits/libraries/preprocessors: Gulp, Gulp Plugins, Sass, and Nunjucks.
 
 ## License
 
