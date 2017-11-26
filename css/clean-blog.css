@@ -237,6 +237,10 @@ article small.post-meta {
 #panel #panel-content {
   background: #f8f9fa; }
 
+.toggle-button {
+  color: #fff !important;
+  font-size: 200% !important; }
+
 .post-preview {
   padding: 0;
   margin: 0;
@@ -1012,10 +1016,6 @@ button.swiper-pagination-bullet {
       box-shadow: 0 0 2px 2px #888; }
     .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
       background: #ccc; }
-
-.toggle-button {
-  color: #fff !important;
-  font-size: 200% !important; }
 
 h1 {
   font-size: 1.5rem; }
