@@ -62,6 +62,7 @@ gulp.task('minify-js', function() {
 // NOTE: requires `npm install` before running!
 gulp.task('copy', function() {
   gulp.src([
+      'node_modules/bootstrap/LICENSE',
       'node_modules/bootstrap/dist/**/*',
       '!**/npm.js',
       '!**/bootstrap-theme.*',
@@ -80,12 +81,14 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/font-awesome'))
 
   gulp.src([
+      'node_modules/slideout/LICENSE',
       'node_modules/slideout/dist/**/*',
       '!**/npm.js'
     ])
     .pipe(gulp.dest('vendor/slideout'))
 
   gulp.src([
+      'node_modules/swiper/LICENSE',
       'node_modules/swiper/dist/**/*',
       '!**/npm.js'
     ])
