@@ -1,0 +1,39 @@
+.siema-container {
+  width: 100%;
+  margin-bottom: 30px;
+  .siema-slide {
+    background: $white;
+    position: relative;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .siema-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 20px 20px 10px 20px;
+      h4 {
+        color: $white;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        a {
+          color: $gray-300;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .siema-container .siema-slide .siema-caption h4 {
+    font-size: 1.15rem;
+    line-height: 1.65rem;
+  }
+}

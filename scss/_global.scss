@@ -6,6 +6,7 @@ body {
   color: $gray-700;
   background: $gray-700;
   @include sans-serif-font-2;
+  -webkit-tap-highlight-color: $primary;
 }
 
 p {
@@ -87,6 +88,8 @@ img::-moz-selection {
   background: transparent;
 }
 
-body {
-  -webkit-tap-highlight-color: $primary;
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+  box-shadow: unset;
 }

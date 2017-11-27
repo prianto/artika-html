@@ -32,8 +32,8 @@
     "font-awesome": "4.7.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9",
-    "slideout": "^1.0.1",
-    "swiper": "^4.0.6"
+    "siema": "^1.4.6",
+    "slideout": "^1.0.1"
   },
   "devDependencies": {
     "browser-sync": "2.18.13",

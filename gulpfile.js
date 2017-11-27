@@ -88,11 +88,11 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/slideout'))
 
   gulp.src([
-      'node_modules/swiper/LICENSE',
-      'node_modules/swiper/dist/**/*',
+      'node_modules/siema/LICENSE',
+      'node_modules/siema/dist/**/*',
       '!**/npm.js'
     ])
-    .pipe(gulp.dest('vendor/swiper'))
+    .pipe(gulp.dest('vendor/siema'))
 })
 
 // Default task
