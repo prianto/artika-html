@@ -21,14 +21,34 @@ document.querySelector('.toggle-button').addEventListener('click', function() {
 /*
 Siema (a.k.a welcome banner)
 */
-new Siema({
-  selector: '.siema-container',
-  duration: 200,
-  easing: 'ease-out',
-  perPage: 1,
-  startIndex: 0,
-  draggable: true,
-  multipleDrag: true,
-  threshold: 20,
-  loop: false
-});
+var siema = document.getElementsByClassName('siema-container');
+if(siema.length) {
+  new Siema({
+    selector: '.siema-container',
+    duration: 200,
+    easing: 'ease-out',
+    perPage: 1,
+    startIndex: 0,
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: false
+  });
+}
+
+/*
+Defer images
+*/
+var imgDefer = document.getElementsByClassName('defer');
+if(imgDefer.length){
+  function defer() {
+    var i;
+    for (i=0; i < imgDefer.length; i++) {
+      var data_src = imgDefer[i].getAttribute('data-src');
+      if(data_src) {
+        imgDefer[i].setAttribute('src', data_src);
+      }
+    }
+  }
+  window.onload = defer;
+}
