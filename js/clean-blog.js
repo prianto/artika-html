@@ -37,18 +37,17 @@ if(siema.length) {
 }
 
 /*
-Defer images
+Lazy images
 */
-var imgDefer = document.getElementsByClassName('defer');
-if(imgDefer.length){
-  function defer() {
-    var i;
-    for (i=0; i < imgDefer.length; i++) {
-      var data_src = imgDefer[i].getAttribute('data-src');
-      if(data_src) {
-        imgDefer[i].setAttribute('src', data_src);
+var lazy = document.getElementsByClassName('lazy');
+if(lazy.length){
+  function wakeUp() {
+    for (var i=0; i < lazy.length; i++) {
+      var lazyDataSrc = lazy[i].getAttribute('data-src');
+      if(lazyDataSrc) {
+        lazy[i].setAttribute('src', lazyDataSrc);
       }
     }
   }
-  window.onload = defer;
+  window.onload = wakeUp;
 }
