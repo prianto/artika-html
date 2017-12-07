@@ -88,7 +88,7 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/slideout'))
 
   gulp.src([
-      'node_modules/siema/LICENSE',
+      'node_modules/siema/LICENSE.md',
       'node_modules/siema/dist/**/*',
       '!**/npm.js'
     ])
