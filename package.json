@@ -31,8 +31,8 @@
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "4.7.0",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.9",
-    "siema": "^1.4.6",
+    "popper.js": "^1.13.0",
+    "siema": "^1.4.9",
     "slideout": "^1.0.1"
   },
   "devDependencies": {
