@@ -1,7 +1,7 @@
 {
   "title": "Artika HTML",
   "name": "artika-html",
-  "version": "4.0.0-beta.2",
+  "version": "4.1.0",
   "description": "Clean and responsive HTML theme for Bootstrap 4.",
   "keywords": [
     "clean",
@@ -28,22 +28,22 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "font-awesome": "4.7.0",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.13.0",
     "siema": "^1.4.9",
     "slideout": "^1.0.1"
   },
   "devDependencies": {
-    "browser-sync": "2.18.13",
+    "browser-sync": "^2.23.7",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "3.9.0",
+    "gulp-clean-css": "^3.9.3",
     "gulp-ext-replace": "^0.3.0",
-    "gulp-header": "1.8.9",
-    "gulp-nunjucks": "3.0.0",
+    "gulp-header": "^2.0.5",
+    "gulp-nunjucks": "^3.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "3.0.0"
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
   }
 }
