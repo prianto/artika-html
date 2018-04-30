@@ -11,3 +11,10 @@ node_modules
 Thumbs.db
 [Dd]esktop.ini
 *.lnk
+
+*.html
+css/*
+!css/.keep
+js/*.min.js
+vendor/*
+!vendor/.keep
