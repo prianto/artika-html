@@ -21,23 +21,14 @@ gulp.task('nunjuck', function() {
 });
 
 // Compiles SCSS files from /scss into /css
-gulp.task('sass', function() {
+gulp.task('sasstomincss', function() {
   gulp.src('scss/clean-blog.scss')
     .pipe(sass())
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
-
-// Minify compiled CSS
-gulp.task('minify-css', ['sass'], function() {
-  gulp.src('css/clean-blog.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
     .pipe(rename({
-      suffix: '.min'
+      extname: ".min.css"
     }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
@@ -96,7 +87,7 @@ gulp.task('copy', function() {
 })
 
 // Default task
-gulp.task('default', ['nunjuck', 'sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('build', ['nunjuck', 'sasstomincss', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -108,7 +99,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'nunjuck', 'sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'nunjuck', 'sasstomincss', 'minify-js'], function() {
   gulp.watch('njk/**/*.njk', ['nunjuck']);
   gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('css/*.css', ['minify-css']);
